@@ -28,7 +28,7 @@ yaxis.plot(Wfx, Wfy, color='k', linestyle='dashed')
 cos = mpl.subplot()
 cos.plot(Dfx, np.cos(Dfx), label="cos(x)")
 
-#Graph zeigen
+#Graph anzeigen
 graph.legend()
 graph.grid(True)
 mpl.show()
@@ -61,6 +61,8 @@ for p in range(0,11):
     for el in Dfx:
         WTC.append(taylorcos(p, el))
     graph2.plot(Dfx,WTC, label=('Potenzreihe mit ',p,' Summanden'))
+
+    #Graph anzeigen
     graph.legend(loc='lower center')
     graph.grid(True)
     mpl.show()
